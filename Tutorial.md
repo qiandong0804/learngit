@@ -54,3 +54,16 @@
 3. dev分支的工作完成后切换回master分支, 把dev分支的工作成果合并到master分支上：git merge dev; git merge命令用于合并指定分支到当前分支。
 4. 合并完成后，就可以放心地删除dev分支了: git branch -d dev
     - 因为创建、合并和删除分支非常快，所以Git鼓励你使用分支完成某个任务，合并后再删掉分支，这和直接在master分支上工作效果是一样的，但过程更安全。
+
+- SWITCH   
+    我们注意到切换分支使用git checkout <branch>，而前面讲过的撤销修改则是git checkout -- <file>，同一个命令，有两种作用，确实有点令人迷惑。
+
+    实际上，切换分支这个动作，用switch更科学。因此，最新版本的Git提供了新的git switch命令来切换分支：
+
+    创建并切换到新的dev分支，可以使用：
+
+    $ git switch -c dev
+    直接切换到已有的master分支，可以使用：
+
+    $ git switch master
+    使用新的git switch命令，比git checkout要更容易理解。
