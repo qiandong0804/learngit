@@ -105,4 +105,5 @@
 
     在master分支上修复的bug，想要合并到当前dev分支，可以用git cherry-pick <commit>命令，把bug提交的修改“复制”到当前分支，避免重复劳动。
 - [多人协作](https://www.liaoxuefeng.com/wiki/896043488029600/900375748016320)
-- 
+- [Tutorial to be learned](https://www.atlassian.com/git/tutorials)
+  
